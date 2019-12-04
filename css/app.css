@@ -1,12 +1,19 @@
 html,
 body,
 header,
-#intro {
+#intro, #intro2 {
   height: 100%;
 }
 
-#intro {
-  background: url("../img/tabla-2.png")no-repeat center center fixed;
+#index-intro {
+  background: url("../img/home-header-background.png")no-repeat center center fixed;
+}
+
+#page-intro {
+  background: url("../img/page-header-background.png")no-repeat center center fixed;
+}
+
+#index-intro, #page-intro {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
