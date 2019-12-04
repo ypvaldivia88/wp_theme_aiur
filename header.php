@@ -10,11 +10,12 @@
 </head>
 
 <body <?php body_class(); ?>>
+<?php wp_body_open(); ?>
   <!--Main Navigation-->
   <header>
 
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar mt-4">
 
       <div class="container">
 
