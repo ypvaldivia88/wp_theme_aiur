@@ -43,9 +43,9 @@
         <!--/.Navbar-->
 
         <!--Mask-->
-        <div id="index-intro" class="view">
+        <div id="intro" class="view" style="background: url('<?php echo get_template_directory_uri(); ?>/img/home-header-background.png')no-repeat center center fixed">
             <!-- Navbar brand -->
-            <a href="<?php echo home_url(); ?>"><?php the_custom_logo(); ?></a>
+            <a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="Portada" /></a>
             <div class="mask rgba-black-strong">
                 <div class="container-fluid d-flex align-items-left justify-content-left h-100">
 

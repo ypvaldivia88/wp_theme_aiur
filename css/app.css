@@ -1,19 +1,11 @@
 html,
 body,
 header,
-#intro, #intro2 {
+#intro {
   height: 100%;
 }
 
-#index-intro {
-  background: url("../img/home-header-background.png")no-repeat center center fixed;
-}
-
-#page-intro {
-  background: url("../img/page-header-background.png")no-repeat center center fixed;
-}
-
-#index-intro, #page-intro {
+#intro {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -30,7 +22,7 @@ header,
   }
 }
 
-@media (min-width: 800px) and (max-width: 850px) {
+@media (min-width: 400px) and (max-width: 850px) {
   .navbar:not(.top-nav-collapse) {
     background-color: #24355C;
   }
