@@ -70,4 +70,4 @@
     </div>
     <!-- Social Icon  -->
 
-    <main role="main" class="mx-5 px-5">
+    <main role="main">
