@@ -50,4 +50,8 @@ header,
 
 .social-vertical {
   margin-top: -10px !important;
+  position: absolute;
+  position: fixed;
+  top: 50%;
+  left: 5px;
 }

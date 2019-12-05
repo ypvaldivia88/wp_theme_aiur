@@ -1,3 +1,6 @@
+</main>
+<!--/. Main -->
+
 <!-- Footer -->
 <footer class="page-footer font-small unique-color-dark">
 
@@ -75,7 +78,7 @@
         <div class="input-group mb-3">
           <input type="text" class="form-control" placeholder="correo@electronico.com" aria-label="correo@electronico.com" aria-describedby="basic-addon2">
           <div class="input-group-append">
-            <span class="input-group-text" id="basic-addon2">Enviar</span>
+            <span class="input-group-text btn-info" id="basic-addon2">Enviar</span>
           </div>
         </div>
       </div>
