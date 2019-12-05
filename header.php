@@ -44,13 +44,14 @@
 
     <!--Mask-->
     <div id="page-intro" class="view" style="background: url('<?php echo get_template_directory_uri(); ?>/img/page-header-background.png')no-repeat top center fixed">
-
-        <!-- Navbar brand -->
-        <a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="Portada" /></a>
+        <div class="mx-2 pt-2">
+            <!-- Navbar brand -->
+            <a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="Portada" /></a>
+        </div>
 
         <div class="container ml-5">
             <!-- Heading -->
-            <h1 class="text-light m-5 main-title1">
+            <h1 class="text-light m-5 page-title">
                 <span><?php the_title(); ?></span>
             </h1>
         </div>

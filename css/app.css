@@ -5,7 +5,11 @@ header,
   height: 100%;
 }
 
-#intro {
+#page-intro {
+  height: 45%;
+}
+
+#intro, #page-intro {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -39,6 +43,11 @@ header,
   font-size: 130px;
 }
 
+.page-title {
+  font-family: "Bebas Neue";
+  font-size: 90px;
+}
+
 .page-footer {
   background: #2A4660;
   color: white;
@@ -52,6 +61,6 @@ header,
   margin-top: -10px !important;
   position: absolute;
   position: fixed;
-  top: 50%;
+  top: 55%;
   left: 5px;
 }
