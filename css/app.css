@@ -57,10 +57,12 @@ header,
   background: #006CFF;
 }
 
-.social-vertical {
-  margin-top: -10px !important;
-  position: absolute;
-  position: fixed;
-  top: 55%;
+.social-vertical-home {
+  margin-top: -40px !important;
+  left: 5px;
+}
+
+.social-vertical-page {
+  margin-top: 5px !important;
   left: 5px;
 }

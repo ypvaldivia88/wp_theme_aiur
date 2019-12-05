@@ -1,10 +1,10 @@
-<?php 
+<?php
 
-get_header(); 
+    get_header();
 
-the_content();
+    the_content();
 
 
-get_footer(); 
+    get_footer();
 
 ?>
