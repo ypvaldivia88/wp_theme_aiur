@@ -74,7 +74,7 @@
                             <!-- Description -->
                             <h4 class="text-light my-4">
                                 <!-- Description -->
-                                <p class="grey-text text-sm">
+                                <p class="grey-text text-sm home-title-description">
                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptate hic
                                     provident nulla repellat facere esse molestiae ipsa labore porro minima quam quaerat
                                     rem, natus repudiandae debitis est sit pariatur.
