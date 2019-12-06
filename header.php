@@ -14,7 +14,7 @@
 
 
     <!--Navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar mt-4">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
 
         <div class="container">
 
@@ -28,7 +28,7 @@
                 array(
                     'theme_location'  => 'menu-principal',
                     'container'       => 'div',
-                    'container_class' => 'collapse navbar-collapse',
+                    'container_class' => 'collapse navbar-collapse mt-4',
                     'container_id'    => 'navbarSupportedContent',
                     'items_wrap'      => '<ul class="navbar-nav ml-auto text-center">%3$s</ul>',
                     'menu_class'      => 'nav-item'
@@ -41,10 +41,8 @@
     </nav>
     <!--/.Navbar-->
 
-    <?php
+    <?php if (is_front_page()) { ?>
 
-    if (is_front_page()) {
-        ?>
         <!--Mask-->
         <div id="intro" class="view" style="background: url('<?php echo get_template_directory_uri(); ?>/img/home-header-background.png')no-repeat center center fixed">
             <!-- Navbar brand -->
@@ -94,7 +92,7 @@
             </div>
 
             <!-- Social Icon  -->
-            <div class="col-md-2 social-vertical-home">
+            <div class="col-md-2 social-vertical-home d-none d-sm-none d-md-none d-lg-block">
                 <div class="btn-group-vertical">
                     <button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button>
                     <button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button>
@@ -103,38 +101,41 @@
                 </div>
             </div>
             <!-- Social Icon  -->
-    <?php
-    } else {
-        ?>
+
+        </div>
+        <!--/.Mask-->
+
+    <?php } else { ?>
+
         <!--Mask-->
         <div id="page-intro" class="view" style="background: url('<?php echo get_template_directory_uri(); ?>/img/page-header-background.png')no-repeat top center fixed">
-            <div class="mx-2 pt-2">
-                <!-- Navbar brand -->
+
+            <!-- Logo Empresa -->
+            <div class="mx-2 pt-3">
                 <a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="Portada" /></a>
             </div>
+            <!--/. Logo Empresa -->
 
-            <div class="container ml-5">
-                <!-- Heading -->
-                <h1 class="text-light m-5 page-title">
-                    <span><?php the_title(); ?></span>
-                </h1>
+            <!-- Titulo -->
+            <h1 class="text-light page-title">
+                <span><?php the_title(); ?></span>
+            </h1>
+            <!-- Titulo -->
+
+        </div>
+        <!--/.Mask-->
+
+        <!-- Social Icon  -->
+        <div class="col-md-2 social-vertical-page d-none d-sm-none d-md-none d-lg-block">
+            <div class="btn-group-vertical">
+                <button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button>
+                <button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button>
+                <button type="button" class="btn btn-primary"><i class="fa fa-youtube-play"></i></button>
+                <button type="button" class="btn btn-primary"><i class="fa fa-instagram"></i></button>
             </div>
+        </div>
+        <!-- Social Icon  -->
 
-            <!-- Social Icon  -->
-            <div class="col-md-2 social-vertical-page">
-                <div class="btn-group-vertical">
-                    <button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button>
-                    <button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button>
-                    <button type="button" class="btn btn-primary"><i class="fa fa-youtube-play"></i></button>
-                    <button type="button" class="btn btn-primary"><i class="fa fa-instagram"></i></button>
-                </div>
-            </div>
-            <!-- Social Icon  -->
-        
-        <?php } ?>
+    <?php } ?>
 
-
-    </div>
-    <!--/.Mask-->
-        
     <main role="main">
