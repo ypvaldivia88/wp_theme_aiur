@@ -18,7 +18,7 @@
         <div id="intro" class="view" style="background: url('<?php echo get_template_directory_uri(); ?>/img/home-header-background.png')no-repeat center center fixed">
 
             <!--Navbar-->
-            <nav class="navbar navbar-expand-lg navbar-dark sticky-top scrolling-navbar">
+            <nav class="navbar transparent navbar-expand-lg navbar-dark sticky-top scrolling-navbar">
 
                 <!-- Navbar brand -->
                 <a class="navbar-brand" href="<?php echo home_url(); ?>">
@@ -108,7 +108,7 @@
         <div id="page-intro" class="view" style="background: url('<?php echo get_template_directory_uri(); ?>/img/page-header-background.png')no-repeat top center fixed">
 
             <!--Navbar-->
-            <nav class="navbar navbar-expand-lg navbar-dark sticky-top scrolling-navbar">
+            <nav class="navbar transparent navbar-expand-lg navbar-dark sticky-top scrolling-navbar">
 
                 <!-- Navbar brand -->
                 <a class="navbar-brand" href="<?php echo home_url(); ?>">
