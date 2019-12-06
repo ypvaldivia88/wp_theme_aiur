@@ -59,7 +59,7 @@ header,
   background: #006CFF;
 }
 
-#categorias {
+#categorias{
   background-color: #9BD6CE; 
   text-align:center;
   vertical-align: center;
@@ -68,6 +68,12 @@ header,
 }
 
 #categorias a {
+  color: #2A4660;
+  font-family: 'Bebas Neue';
+  font: bolder;
+}
+
+#etiquetas a {
   color: #2A4660;
   font-family: 'Bebas Neue';
   font: bolder;

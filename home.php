@@ -1,14 +1,17 @@
 <?php get_header(); ?>
 
+<!--/.Categorias-->
+<div id="categorias">
+  <span class="d-block pt-2 text-uppercase text-decoration-none"><?php the_category('  '); ?></span>
+</div>
+<!--/.Categorias-->
+
 <!--Main layout-->
 <main class="mt-5">
     <div class="container">
         <div class="col-lg-9">
             <!--Section: Noticias-->
             <section id="Noticias" class="text-center">
-
-                <!-- Heading -->
-                <h2 class="mb-5 font-weight-bold">Ultimas noticias</h2>
 
                 <!--Entradas-->
                 <div class="row">
