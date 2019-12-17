@@ -11,29 +11,34 @@
       <!--First column-->
       <div class="col-md-4">
         <h6 class="text-uppercase font-weight-bold mb-5">
-          <strong>Contáctenos</strong>
+          <strong>CONTÁCTANOS</strong>
         </h6>
-        <p class="text-justify">
+        <!--<p class="text-justify">
           <button type="button" class="btn btn-light btn-sm rounded-circle mr-2">
             <i class="fa fa-map-marker"></i>
           </button>
           Lorem imspums #15 Int. 203, Col. Polanco Reforma, Miguel
-          Hidalgo, CDMX, C.P. 0000</p>
+          Hidalgo, CDMX, C.P. 0000</p>-->
         <p class="text-justify">
           <button type="button" class="btn btn-light btn-sm rounded-circle mr-2">
             <i class="fa fa-whatsapp"></i>
           </button>
-          +52 (55) 123213213</p>
+          5575052426</p>
         <p class="text-justify">
+          <button type="button" class="btn btn-light btn-sm rounded-circle mr-2">
+            <i class="fa fa-whatsapp"></i>
+          </button>
+          5543587979</p>
+        <!--<p class="text-justify">
           <button type="button" class="btn btn-light btn-sm rounded-circle mr-2">
             <i class="fa fa-phone"></i>
           </button>
-          +52 (55) 21313123123</p>
+          +52 (55) 21313123123</p>-->
         <p class="text-justify">
           <button type="button" class="btn btn-light btn-sm rounded-circle mr-2">
             <i class="fa fa-envelope"></i>
           </button>
-          info@mail.com</p>
+          contacto@surfeandosonrisas.org</p>
       </div>
       <!--/.First column-->
 
@@ -44,7 +49,7 @@
           <div class="container">
 
             <h6 class="text-uppercase font-weight-bold mb-5">
-              Síguenos
+              SÍGUENOS
             </h6>
 
             <!-- Social Icon  -->
@@ -73,7 +78,7 @@
       <!--Third column-->
       <div class="col-md-4">
         <h6 class="text-uppercase font-weight-bold mb-5">
-          <strong>Subscríbete</strong>
+          <strong>SUSCRIBETE A NUESTRO NEWSLETTER</strong>
         </h6>
         <div class="input-group mb-3">
           <input type="text" class="form-control" placeholder="correo@electronico.com" aria-label="correo@electronico.com" aria-describedby="basic-addon2">

@@ -62,26 +62,25 @@
                             <!-- Tag -->
                             <h4 class="text-light">
                                 <p class="font-italic">
-                                    #UneteAlaOla
+                                    #SubeteAlaOla
                                 </p>
                             </h4>
                             <!--/. Tag -->
 
                             <!-- Description -->
                             <p class="text-light w-75">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptate hic
-                                provident nulla repellat facere esse molestiae ipsa labore porro minima quam quaerat
-                                rem, natus repudiandae debitis est sit pariatur.
+                            Creemos que todos tenemos derecho a sentir la libertad y felicidad de surfear y practicar deportes acuáticos adaptados e inspirar un sin fin de posibilidades más allá de la discapacidad.
                             </p>
                             <!--/. Description -->
 
                             <div class="btn-group mr-2" role="group">
-                                <button type="button" class="btn btn-outline-light rounded-pill mr-2">
+                                <a href="<?php get_permalink(66); ?>" class="btn btn-outline-light rounded-pill mr-2">
                                     Quiero formar parte
-                                </button>
-                                <button type="button" class="btn btn-outline-light rounded-circle">
+                                </a>
+                                <button type="button" class="btn btn-outline-light rounded-circle wp-video-popup">
                                     <i class="fa fa-play"></i>
                                 </button>
+                                [wp-video-popup video="https://youtu.be/CBsoYtaUMik"]
                             </div>
                         </div>
                     </div>
