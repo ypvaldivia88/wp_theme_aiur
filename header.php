@@ -15,7 +15,14 @@
     <?php if (is_front_page()) { ?>
 
         <!--Mask-->
-        <div id="intro" class="view" style="background: url('<?php echo get_template_directory_uri(); ?>/img/home-header-background.png')no-repeat center center fixed">
+        <div id="intro" 
+            style="
+                background: url('<?php echo get_template_directory_uri(); ?>/img/home-header-background.jpeg');
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: relative;
+            ">
 
             <!--Navbar-->
             <nav class="navbar transparent navbar-expand-lg navbar-dark sticky-top scrolling-navbar">
@@ -37,7 +44,7 @@
                             'container_class' => 'collapse navbar-collapse',
                             'container_id'    => 'navbarSupportedContent',
                             'items_wrap'      => '<ul class="navbar-nav ml-auto text-center">%3$s</ul>',
-                            'menu_class'      => 'nav-item'
+                            'menu_class'      => 'nav-item text-primary'
                         )
                     );
                     ?>
@@ -47,7 +54,7 @@
             <div class="mask rgba-black-strong">
                 <div class="container-fluid d-flex align-items-left justify-content-left h-100">
 
-                    <div class="row d-flex justify-content-left text-left ml-md-5 pl-md-5 text-break">
+                    <div class="row d-flex justify-content-left text-left ml-md-5 pl-5 text-break">
                         <div class="col-xs-12">
 
                             <!-- Heading -->
@@ -69,18 +76,17 @@
 
                             <!-- Description -->
                             <p class="text-light w-75">
-                            Creemos que todos tenemos derecho a sentir la libertad y felicidad de surfear y practicar deportes acuáticos adaptados e inspirar un sin fin de posibilidades más allá de la discapacidad.
+                                Creemos que todos tenemos derecho a sentir la libertad y felicidad de surfear y practicar deportes acuáticos adaptados e inspirar un sin fin de posibilidades más allá de la discapacidad.
                             </p>
                             <!--/. Description -->
 
                             <div class="btn-group mr-2" role="group">
-                                <a href="<?php get_permalink(66); ?>" class="btn btn-outline-light rounded-pill mr-2">
+                                <a href="<?php echo get_permalink(66); ?>" class="btn btn-outline-light rounded-pill mr-2">
                                     Quiero formar parte
                                 </a>
                                 <button type="button" class="btn btn-outline-light rounded-circle wp-video-popup">
                                     <i class="fa fa-play"></i>
                                 </button>
-                                [wp-video-popup video="https://youtu.be/CBsoYtaUMik"]
                             </div>
                         </div>
                     </div>
@@ -90,10 +96,10 @@
             <!-- Social Icon  -->
             <div class="col-md-2 social-vertical-home d-none d-sm-none d-md-none d-lg-block">
                 <div class="btn-group-vertical">
-                    <button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button>
-                    <button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button>
-                    <button type="button" class="btn btn-primary"><i class="fa fa-youtube-play"></i></button>
-                    <button type="button" class="btn btn-primary"><i class="fa fa-instagram"></i></button>
+                    <a href="https://www.facebook.com/surfeandosonrisas/" class="btn btn-primary"><i class="fa fa-facebook"></i></a>
+                    <a href="https://twitter.com/surf_sonrisas" class="btn btn-primary"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/channel/UCttHxaJh5onx4xzFibYqGhA" class="btn btn-primary"><i class="fa fa-youtube-play"></i></a>
+                    <a href="https://www.instagram.com/surfeandosonrisas/" class="btn btn-primary"><i class="fa fa-instagram"></i></a>
                 </div>
             </div>
             <!-- Social Icon  -->
@@ -150,10 +156,10 @@
         <!-- Social Icon  -->
         <div class="col-md-2 social-vertical-page d-none d-sm-none d-md-none d-lg-block">
             <div class="btn-group-vertical">
-                <button type="button" class="btn btn-primary"><i class="fa fa-facebook"></i></button>
-                <button type="button" class="btn btn-primary"><i class="fa fa-twitter"></i></button>
-                <button type="button" class="btn btn-primary"><i class="fa fa-youtube-play"></i></button>
-                <button type="button" class="btn btn-primary"><i class="fa fa-instagram"></i></button>
+                <a href="https://www.facebook.com/surfeandosonrisas/" class="btn btn-primary"><i class="fa fa-facebook"></i></a>
+                <a href="https://twitter.com/surf_sonrisas" class="btn btn-primary"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.youtube.com/channel/UCttHxaJh5onx4xzFibYqGhA" class="btn btn-primary"><i class="fa fa-youtube-play"></i></a>
+                <a href="https://www.instagram.com/surfeandosonrisas/" class="btn btn-primary"><i class="fa fa-instagram"></i></a>
             </div>
         </div>
         <!-- Social Icon  -->

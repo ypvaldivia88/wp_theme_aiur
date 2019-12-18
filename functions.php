@@ -23,17 +23,18 @@ function aiur_setup()
 }
 add_action('after_setup_theme', 'aiur_setup');
 
-function aiur_custom_logo_setup() {
+function aiur_custom_logo_setup()
+{
     $defaults = array(
-    'height'      => 90,
-    'width'       => 90,
-    'flex-height' => true,
-    'flex-width'  => true,
-    'header-text' => array( 'site-title', 'site-description' ),
+        'height'      => 90,
+        'width'       => 90,
+        'flex-height' => true,
+        'flex-width'  => true,
+        'header-text' => array('site-title', 'site-description'),
     );
-    add_theme_support( 'custom-logo', $defaults );
-   }
-   add_action( 'after_setup_theme', 'aiur_custom_logo_setup' );
+    add_theme_support('custom-logo', $defaults);
+}
+add_action('after_setup_theme', 'aiur_custom_logo_setup');
 
 //agregar sidebar
 function aiur_widgets()
@@ -82,3 +83,12 @@ function aiur_excerpt_limited($limit)
     $excerpt = preg_replace('`[[^]]*]`', '', $excerpt);
     return $excerpt;
 }
+
+function aiur_add_woocommerce_support()
+{
+    add_theme_support('woocommerce');
+    add_theme_support('wc-product-gallery-zoom');
+    add_theme_support('wc-product-gallery-lightbox');
+    add_theme_support('wc-product-gallery-slider');
+}
+add_action('after_setup_theme', 'aiur_add_woocommerce_support');

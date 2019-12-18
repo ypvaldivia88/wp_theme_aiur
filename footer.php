@@ -54,18 +54,10 @@
 
             <!-- Social Icon  -->
             <div class="btn-group" role="group" aria-label="First group">
-              <button type="button" class="btn btn-outline-light rounded-circle mr-2">
-                <i class="fa fa-facebook"></i>
-              </button>
-              <button type="button" class="btn btn-outline-light rounded-circle mr-2">
-                <i class="fa fa-twitter"></i>
-              </button>
-              <button type="button" class="btn btn-outline-light rounded-circle mr-2">
-                <i class="fa fa-youtube-play"></i>
-              </button>
-              <button type="button" class="btn btn-outline-light rounded-circle mr-2">
-                <i class="fa fa-instagram"></i>
-              </button>
+              <a href="https://www.facebook.com/surfeandosonrisas/" class="btn btn-outline-light rounded-circle mr-2"><i class="fa fa-facebook"></i></a>
+              <a href="https://twitter.com/surf_sonrisas" class="btn btn-outline-light rounded-circle mr-2"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.youtube.com/channel/UCttHxaJh5onx4xzFibYqGhA" class="btn btn-outline-light rounded-circle mr-2"><i class="fa fa-youtube-play"></i></a>
+              <a href="https://www.instagram.com/surfeandosonrisas/" class="btn btn-outline-light rounded-circle mr-2"><i class="fa fa-instagram"></i></a>
             </div>
             <!-- Social Icon  -->
 
@@ -78,7 +70,7 @@
       <!--Third column-->
       <div class="col-md-4">
         <h6 class="text-uppercase font-weight-bold mb-5">
-          <strong>SUSCRIBETE A NUESTRO NEWSLETTER</strong>
+          <strong>SUSCRÍBETE A NUESTRO NEWSLETTER</strong>
         </h6>
         <div class="input-group mb-3">
           <input type="text" class="form-control" placeholder="correo@electronico.com" aria-label="correo@electronico.com" aria-describedby="basic-addon2">
