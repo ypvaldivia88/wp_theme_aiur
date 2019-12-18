@@ -19,7 +19,7 @@ header,
 #intro:before {
 	content:'';
   position: absolute;
-  height: 110%;  
+  height: 100%;  
   top: 0;
 	bottom: 0;
 	left: 0;

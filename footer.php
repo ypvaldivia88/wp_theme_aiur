@@ -54,10 +54,10 @@
 
             <!-- Social Icon  -->
             <div class="btn-group" role="group" aria-label="First group">
-              <a href="https://www.facebook.com/surfeandosonrisas/" class="btn btn-outline-light rounded-circle mr-2"><i class="fa fa-facebook"></i></a>
-              <a href="https://twitter.com/surf_sonrisas" class="btn btn-outline-light rounded-circle mr-2"><i class="fa fa-twitter"></i></a>
-              <a href="https://www.youtube.com/channel/UCttHxaJh5onx4xzFibYqGhA" class="btn btn-outline-light rounded-circle mr-2"><i class="fa fa-youtube-play"></i></a>
-              <a href="https://www.instagram.com/surfeandosonrisas/" class="btn btn-outline-light rounded-circle mr-2"><i class="fa fa-instagram"></i></a>
+              <a target="_blank" href="https://www.facebook.com/surfeandosonrisas/" class="btn btn-outline-light rounded-circle mr-2"><i class="fa fa-facebook"></i></a>
+              <a target="_blank" href="https://twitter.com/surf_sonrisas" class="btn btn-outline-light rounded-circle mr-2"><i class="fa fa-twitter"></i></a>
+              <a target="_blank" href="https://www.youtube.com/channel/UCttHxaJh5onx4xzFibYqGhA" class="btn btn-outline-light rounded-circle mr-2"><i class="fa fa-youtube-play"></i></a>
+              <a target="_blank" href="https://www.instagram.com/surfeandosonrisas/" class="btn btn-outline-light rounded-circle mr-2"><i class="fa fa-instagram"></i></a>
             </div>
             <!-- Social Icon  -->
 

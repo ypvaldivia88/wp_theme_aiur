@@ -92,3 +92,31 @@ function aiur_add_woocommerce_support()
     add_theme_support('wc-product-gallery-slider');
 }
 add_action('after_setup_theme', 'aiur_add_woocommerce_support');
+
+if( !function_exists('aiur_show_specific_product_quantity') ) {
+
+    function aiur_show_specific_product_quantity( $atts ) {
+
+        // Shortcode Attributes
+        $atts = shortcode_atts(
+            array(
+                'id' => '', // Product ID argument
+            ),
+            $atts,
+            'product_qty'
+        );
+
+        if( empty($atts['id'])) return;
+
+        $stock_quantity = 0;
+
+        $product_obj = wc_get_product( intval( $atts['id'] ) );
+        $stock_quantity = $product_obj->get_stock_quantity();
+
+        if( $stock_quantity > 0 ) return $stock_quantity;
+
+    }
+
+    add_shortcode( 'product_qty', 'aiur_show_specific_product_quantity' );
+
+}
