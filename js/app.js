@@ -72,3 +72,9 @@ if (botonResponderComentarios) {
         boton.className = 'btn btn-outline-primary btn-sm'
     })
 }
+
+if (document.querySelector('.checkout.woocommerce-checkout')) {
+    document.querySelector('.col-1').className = 'col-md-12';
+    document.querySelector('.col-2').className = 'col-md-12';
+    document.querySelector('#order_comments').setAttribute('cols', '500');
+}
