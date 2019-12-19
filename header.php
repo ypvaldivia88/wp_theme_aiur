@@ -16,7 +16,7 @@
 
         <!--Mask-->
         <div id="intro" style="
-                background: url('<?php echo get_template_directory_uri(); ?>/img/home-header-background.jpeg');
+                background: url('https://surfeandosonrisas.org/wp-content/uploads/2019/12/WhatsApp-Image-2019-12-17-at-4.58.06-PM.jpeg');
                 background-position: center center;
                 background-size: cover;
                 background-repeat: no-repeat;
@@ -36,16 +36,16 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <?php
-                                                wp_nav_menu(
-                                                    array(
-                                                        'theme_location'  => 'menu-principal',
-                                                        'container'       => 'div',
-                                                        'container_class' => 'collapse navbar-collapse',
-                                                        'container_id'    => 'navbarSupportedContent',
-                                                        'items_wrap'      => '<ul class="navbar-nav ml-auto text-center">%3$s</ul>',
-                                                        'menu_class'      => 'nav-item text-primary'
-                                                    )
-                                                );
+                    wp_nav_menu(
+                        array(
+                            'theme_location'  => 'menu-principal',
+                            'container'       => 'div',
+                            'container_class' => 'collapse navbar-collapse',
+                            'container_id'    => 'navbarSupportedContent',
+                            'items_wrap'      => '<ul class="navbar-nav ml-auto text-center">%3$s</ul>',
+                            'menu_class'      => 'nav-item text-primary'
+                        )
+                    );
                 ?>
             </nav>
             <!--/.Navbar-->
@@ -109,14 +109,14 @@
     <?php } else { ?>
         <!--Mask-->
         <div id="intro" style="<?php 
-            if (is_page(184)) { echo "background:url('".get_template_directory_uri()."/img/header1.jpeg');"; } else
-            if (is_page(64))  { echo "background:url('".get_template_directory_uri()."/img/header2.jpeg');"; } else
-            if (is_page(132))  { echo "background:url('".get_template_directory_uri()."/img/header3.jpeg');"; } else
-            if (is_page(66)) { echo "background:url('".get_template_directory_uri()."/img/header4.jpeg');"; } else
-            if (is_page(67)) { echo "background:url('".get_template_directory_uri()."/img/header5.jpeg');"; } else
-            if (is_page(65)) { echo "background:url('".get_template_directory_uri()."/img/header6.jpeg');"; } else
-            if (is_page(406)) { echo "background:url('".get_template_directory_uri()."/img/header7.jpeg');"; } else
-            { echo "background:url('".get_template_directory_uri()."/img/page-header-backgroud.png');"; } ?>
+            if (is_page(184)) { echo "background:url('https://surfeandosonrisas.org/wp-content/uploads/2019/12/WhatsApp-Image-2019-12-17-at-6.22.14-PM.jpeg');"; } else
+            if (is_page(64))  { echo "background:url('https://surfeandosonrisas.org/wp-content/uploads/2019/12/WhatsApp-Image-2019-12-17-at-6.22.04-PM.jpeg');"; } else
+            if (is_page(132))  { echo "background:url('https://surfeandosonrisas.org/wp-content/uploads/2019/12/WhatsApp-Image-2019-12-17-at-6.22.04-PM-1.jpeg');"; } else
+            if (is_page(66)) { echo "background:url('https://surfeandosonrisas.org/wp-content/uploads/2019/12/WhatsApp-Image-2019-12-17-at-6.22.03-PM-4.jpeg');"; } else
+            if (is_page(67)) { echo "background:url('https://surfeandosonrisas.org/wp-content/uploads/2019/12/WhatsApp-Image-2019-12-17-at-6.22.03-PM-3.jpeg');"; } else
+            if (is_page(65)) { echo "background:url('https://surfeandosonrisas.org/wp-content/uploads/2019/12/WhatsApp-Image-2019-12-17-at-6.22.03-PM-2.jpeg');"; } else
+            if (is_page(406)) { echo "background:url('https://surfeandosonrisas.org/wp-content/uploads/2019/12/WhatsApp-Image-2019-12-17-at-6.22.03-PM-1.jpeg');"; } else
+            { echo "background:url('https://surfeandosonrisas.org/wp-content/uploads/2019/12/WhatsApp-Image-2019-12-17-at-6.22.00-PM.jpeg');"; } ?>
             background-position: center center;
             background-size: cover;
             background-repeat: no-repeat;
