@@ -15,8 +15,7 @@
     <?php if (is_front_page()) { ?>
 
         <!--Mask-->
-        <div id="intro" 
-            style="
+        <div id="intro" style="
                 background: url('<?php echo get_template_directory_uri(); ?>/img/home-header-background.jpeg');
                 background-position: center center;
                 background-size: cover;
@@ -37,17 +36,17 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <?php
-                    wp_nav_menu(
-                        array(
-                            'theme_location'  => 'menu-principal',
-                            'container'       => 'div',
-                            'container_class' => 'collapse navbar-collapse',
-                            'container_id'    => 'navbarSupportedContent',
-                            'items_wrap'      => '<ul class="navbar-nav ml-auto text-center">%3$s</ul>',
-                            'menu_class'      => 'nav-item text-primary'
-                        )
-                    );
-                    ?>
+                                                wp_nav_menu(
+                                                    array(
+                                                        'theme_location'  => 'menu-principal',
+                                                        'container'       => 'div',
+                                                        'container_class' => 'collapse navbar-collapse',
+                                                        'container_id'    => 'navbarSupportedContent',
+                                                        'items_wrap'      => '<ul class="navbar-nav ml-auto text-center">%3$s</ul>',
+                                                        'menu_class'      => 'nav-item text-primary'
+                                                    )
+                                                );
+                ?>
             </nav>
             <!--/.Navbar-->
 
@@ -108,9 +107,20 @@
         <!--/.Mask-->
 
     <?php } else { ?>
-
         <!--Mask-->
-        <div id="page-intro" class="view" style="background: url('<?php echo get_template_directory_uri(); ?>/img/page-header-background.png')no-repeat top center fixed">
+        <div id="intro" style="<?php 
+            if (is_page(184)) { echo "background:url('".get_template_directory_uri()."/img/header1.jpeg');"; } else
+            if (is_page(64))  { echo "background:url('".get_template_directory_uri()."/img/header2.jpeg');"; } else
+            if (is_page(132))  { echo "background:url('".get_template_directory_uri()."/img/header3.jpeg');"; } else
+            if (is_page(66)) { echo "background:url('".get_template_directory_uri()."/img/header4.jpeg');"; } else
+            if (is_page(67)) { echo "background:url('".get_template_directory_uri()."/img/header5.jpeg');"; } else
+            if (is_page(65)) { echo "background:url('".get_template_directory_uri()."/img/header6.jpeg');"; } else
+            if (is_page(406)) { echo "background:url('".get_template_directory_uri()."/img/header7.jpeg');"; } else
+            { echo "background:url('".get_template_directory_uri()."/img/page-header-backgroud.png');"; } ?>
+            background-position: center center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: relative;">
 
             <!--Navbar-->
             <nav class="navbar transparent navbar-expand-lg navbar-dark sticky-top scrolling-navbar">
@@ -125,17 +135,17 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <?php
-                    wp_nav_menu(
-                        array(
-                            'theme_location'  => 'menu-principal',
-                            'container'       => 'div',
-                            'container_class' => 'collapse navbar-collapse',
-                            'container_id'    => 'navbarSupportedContent',
-                            'items_wrap'      => '<ul class="navbar-nav ml-auto text-center">%3$s</ul>',
-                            'menu_class'      => 'nav-item'
-                        )
-                    );
-                    ?>
+                                                wp_nav_menu(
+                                                    array(
+                                                        'theme_location'  => 'menu-principal',
+                                                        'container'       => 'div',
+                                                        'container_class' => 'collapse navbar-collapse',
+                                                        'container_id'    => 'navbarSupportedContent',
+                                                        'items_wrap'      => '<ul class="navbar-nav ml-auto text-center">%3$s</ul>',
+                                                        'menu_class'      => 'nav-item'
+                                                    )
+                                                );
+                ?>
             </nav>
             <!--/.Navbar-->
 
