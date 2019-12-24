@@ -80,7 +80,7 @@
                             <!--/. Description -->
 
                             <div class="btn-group mr-2" role="group">
-                                <a href="<?php echo get_permalink(66); ?>" class="btn btn-outline-light rounded-pill mr-2">
+                                <a href="<?php echo get_permalink(66); ?>" class="btn btn-warning rounded-pill mr-2">
                                     Quiero formar parte
                                 </a>
                                 <button type="button" class="btn btn-outline-light rounded-circle wp-video-popup">

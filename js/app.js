@@ -79,4 +79,14 @@ if (document.querySelector('.checkout.woocommerce-checkout')) {
     document.querySelector('#order_comments').setAttribute('cols', '500');
 }
 
-document.querySelector('#menu-item-717 a').className += ' btn btn-outline-warning';
+const btnDonar =  document.querySelector('#menu-item-717 a');
+if (btnDonar) {
+    btnDonar.className += ' btn btn-outline-warning';
+}
+
+const itemMenu = document.querySelectorAll('.nav-link');
+if (itemMenu) {
+    itemMenu.forEach(boton => {
+        boton.className += ' font-weight-bold lead'
+    })
+}
