@@ -78,3 +78,5 @@ if (document.querySelector('.checkout.woocommerce-checkout')) {
     document.querySelector('.col-2').className = 'col-md-12';
     document.querySelector('#order_comments').setAttribute('cols', '500');
 }
+
+document.querySelector('#menu-item-717 a').className += ' btn btn-outline-warning';
