@@ -13,8 +13,8 @@
     <?php wp_body_open(); ?>
 
         <!--Mask-->
-        <div id="intro" 
-            style="background:url('https://surfeandosonrisas.org/wp-content/uploads/2019/12/WhatsApp-Image-2019-12-17-at-6.22.00-PM.jpeg');"
+        <div id="intro" style="
+            background:url('https://surfeandosonrisas.org/wp-content/uploads/2019/12/WhatsApp-Image-2019-12-17-at-6.22.14-PM.jpeg');
             background-position: center center;
             background-size: cover;
             background-repeat: no-repeat;

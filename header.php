@@ -36,16 +36,16 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <?php
-                    wp_nav_menu(
-                        array(
-                            'theme_location'  => 'menu-principal',
-                            'container'       => 'div',
-                            'container_class' => 'collapse navbar-collapse',
-                            'container_id'    => 'navbarSupportedContent',
-                            'items_wrap'      => '<ul class="navbar-nav ml-auto text-center">%3$s</ul>',
-                            'menu_class'      => 'nav-item text-primary'
-                        )
-                    );
+                wp_nav_menu(
+                    array(
+                        'theme_location'  => 'menu-principal',
+                        'container'       => 'div',
+                        'container_class' => 'collapse navbar-collapse',
+                        'container_id'    => 'navbarSupportedContent',
+                        'items_wrap'      => '<ul class="navbar-nav ml-auto text-center">%3$s</ul>',
+                        'menu_class'      => 'nav-item text-primary'
+                    )
+                );
                 ?>
             </nav>
             <!--/.Navbar-->
@@ -75,7 +75,9 @@
 
                             <!-- Description -->
                             <p class="text-light w-75">
-                                Creemos que todos tenemos derecho a sentir la libertad y felicidad de surfear y practicar deportes acuáticos adaptados e inspirar un sin fin de posibilidades más allá de la discapacidad.
+                                Creemos que todos tenemos derecho a sentir la libertad y felicidad de surfear y practicar
+                                deportes acuáticos adaptados e inspirar un sin fin de posibilidades más allá de la
+                                discapacidad.
                             </p>
                             <!--/. Description -->
 
@@ -92,6 +94,69 @@
                 </div>
             </div>
 
+        <?php } else { ?>
+            <!--Mask-->
+            <div id="intro" style="               
+                <?php if (is_page()) {
+                    //this retrieve the full version of image
+                    $image_data='';
+                    $image_url='';
+                    $image_data = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), 'full', false );
+                    $image_url = $image_data[0];
+                    if ($image_url=='') {
+                        echo "background: url('https://surfeandosonrisas.org/wp-content/uploads/2019/12/WhatsApp-Image-2019-12-17-at-6.22.00-PM.jpeg');";
+                    } else {
+                        echo "background: url('$image_url');";
+                    }
+                } else {
+                    echo "background: url('https://surfeandosonrisas.org/wp-content/uploads/2019/12/WhatsApp-Image-2019-12-17-at-6.22.00-PM.jpeg');";
+                } ?>
+                background-position: center center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                position: relative;
+            ">
+
+                <!--Navbar-->
+                <nav class="navbar transparent navbar-expand-lg navbar-dark sticky-top scrolling-navbar">
+
+                    <!-- Navbar brand -->
+                    <a class="navbar-brand" href="<?php echo home_url(); ?>">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="">
+                    </a>
+
+                    <!-- Collapse button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <?php
+                    wp_nav_menu(
+                        array(
+                            'theme_location'  => 'menu-principal',
+                            'container'       => 'div',
+                            'container_class' => 'collapse navbar-collapse',
+                            'container_id'    => 'navbarSupportedContent',
+                            'items_wrap'      => '<ul class="navbar-nav ml-auto text-center">%3$s</ul>',
+                            'menu_class'      => 'nav-item'
+                        )
+                    );
+                    ?>
+                </nav>
+                <!--/.Navbar-->
+
+                <!-- Titulo -->
+                <h1 class="text-light page-title">
+                    <?php if (is_home()) { ?>
+                        Blog
+                    <?php } else { ?>
+                        <span><?php the_title(); ?></span>
+
+                    <?php } ?>
+                </h1>
+                <!-- Titulo -->
+
+            <?php } ?>
+
             <!-- Social Icon  -->
             <div class="col-md-2 social-vertical-home d-none d-sm-none d-md-none d-lg-block">
                 <div class="btn-group-vertical">
@@ -103,77 +168,7 @@
             </div>
             <!-- Social Icon  -->
 
-        </div>
-        <!--/.Mask-->
-
-    <?php } else { ?>
-        <!--Mask-->
-        <div id="intro" style="<?php 
-            if (is_page(184)) { echo "background:url('https://surfeandosonrisas.org/wp-content/uploads/2019/12/WhatsApp-Image-2019-12-17-at-6.22.14-PM.jpeg');"; } else
-            if (is_page(64))  { echo "background:url('https://surfeandosonrisas.org/wp-content/uploads/2019/12/WhatsApp-Image-2019-12-17-at-6.22.04-PM.jpeg');"; } else
-            if (is_page(132))  { echo "background:url('https://surfeandosonrisas.org/wp-content/uploads/2019/12/WhatsApp-Image-2019-12-17-at-6.22.04-PM-1.jpeg');"; } else
-            if (is_page(66)) { echo "background:url('https://surfeandosonrisas.org/wp-content/uploads/2019/12/WhatsApp-Image-2019-12-17-at-6.22.03-PM-4.jpeg');"; } else
-            if (is_page(67)) { echo "background:url('https://surfeandosonrisas.org/wp-content/uploads/2019/12/WhatsApp-Image-2019-12-17-at-6.22.03-PM-3.jpeg');"; } else
-            if (is_page(65)) { echo "background:url('https://surfeandosonrisas.org/wp-content/uploads/2019/12/WhatsApp-Image-2019-12-17-at-6.22.03-PM-2.jpeg');"; } else
-            if (is_page(406)) { echo "background:url('https://surfeandosonrisas.org/wp-content/uploads/2019/12/WhatsApp-Image-2019-12-17-at-6.22.03-PM-1.jpeg');"; } else
-            { echo "background:url('https://surfeandosonrisas.org/wp-content/uploads/2019/12/WhatsApp-Image-2019-12-17-at-6.22.00-PM.jpeg');"; } ?>
-            background-position: center center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            position: relative;">
-
-            <!--Navbar-->
-            <nav class="navbar transparent navbar-expand-lg navbar-dark sticky-top scrolling-navbar">
-
-                <!-- Navbar brand -->
-                <a class="navbar-brand" href="<?php echo home_url(); ?>">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo.png" alt="">
-                </a>
-
-                <!-- Collapse button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <?php
-                                                wp_nav_menu(
-                                                    array(
-                                                        'theme_location'  => 'menu-principal',
-                                                        'container'       => 'div',
-                                                        'container_class' => 'collapse navbar-collapse',
-                                                        'container_id'    => 'navbarSupportedContent',
-                                                        'items_wrap'      => '<ul class="navbar-nav ml-auto text-center">%3$s</ul>',
-                                                        'menu_class'      => 'nav-item'
-                                                    )
-                                                );
-                ?>
-            </nav>
-            <!--/.Navbar-->
-
-            <!-- Titulo -->
-            <h1 class="text-light page-title">
-                <?php if (is_home()) { ?>
-                    Blog
-                <?php } else { ?>
-                    <span><?php the_title(); ?></span>
-
-                <?php } ?>
-            </h1>
-            <!-- Titulo -->
-
-        </div>
-        <!--/.Mask-->
-
-        <!-- Social Icon  -->
-        <div class="col-md-2 social-vertical-page d-none d-sm-none d-md-none d-lg-block">
-            <div class="btn-group-vertical">
-                <a target="_blank" href="https://www.facebook.com/surfeandosonrisas/" class="btn btn-primary"><i class="fa fa-facebook"></i></a>
-                <a target="_blank" href="https://twitter.com/surf_sonrisas" class="btn btn-primary"><i class="fa fa-twitter"></i></a>
-                <a target="_blank" href="https://www.youtube.com/channel/UCttHxaJh5onx4xzFibYqGhA" class="btn btn-primary"><i class="fa fa-youtube-play"></i></a>
-                <a target="_blank" href="https://www.instagram.com/surfeandosonrisas/" class="btn btn-primary"><i class="fa fa-instagram"></i></a>
             </div>
-        </div>
-        <!-- Social Icon  -->
+            <!--/.Mask-->
 
-    <?php } ?>
-
-    <main role="main">
+            <main role="main">

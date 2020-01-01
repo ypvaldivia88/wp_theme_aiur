@@ -73,10 +73,20 @@
           <strong>SUSCRÍBETE A NUESTRO NEWSLETTER</strong>
         </h6>
         <div class="input-group mb-3">
-          <input type="text" class="form-control" placeholder="correo@electronico.com" aria-label="correo@electronico.com" aria-describedby="basic-addon2">
+          <div class="tnp tnp-subscription">
+            <form method="post" action="https://surfeandosonrisas.org/?na=s" onsubmit="return newsletter_check(this)">
+
+              <input type="hidden" name="nlang" value="">
+              <div class="tnp-field tnp-field-email"><label>Correo electrónico</label><input class="tnp-email" type="email" name="ne" required></div>
+              <div class="tnp-field tnp-field-button"><input class="tnp-submit" type="submit" value="Suscríbete">
+              </div>
+            </form>
+          </div>
+
+          <!-- <input type="text" class="form-control" placeholder="correo@electronico.com" aria-label="correo@electronico.com" aria-describedby="basic-addon2">
           <div class="input-group-append">
             <span class="input-group-text btn-info" id="basic-addon2">Enviar</span>
-          </div>
+          </div> -->
         </div>
       </div>
       <!--/.Third column-->
